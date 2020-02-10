@@ -45,7 +45,8 @@ python manage.py runserver
 Step 6: Run the server
 
 ```
-Go to http://127.0.0.1:8000/admin and login using the user that you've created at Step 4. And you will be able to view the data and records that are added into the database from the admin page.
+Go to http://127.0.0.1:8000/admin and login using the user that you've created at Step 4. 
+And you will be able to view the data and records that are added into the database from the admin page.
 ```
 
 ## Built With
@@ -58,6 +59,6 @@ Go to http://127.0.0.1:8000/admin and login using the user that you've created a
 * Create household: http://127.0.0.1:8000/api/household/create/
 * Add a family member to household: http://127.0.0.1:8000/api/household/add/
 * List households: http://127.0.0.1:8000/api/household/
-* Show the details of a household: http://127.0.0.1:8000/api/household/<id>/
-* Delete household: http://127.0.0.1:8000/api/household/<id>/delete/
+* Show the details of a household: http://127.0.0.1:8000/api/household/[id]/
+* Delete household: http://127.0.0.1:8000/api/household/[id]/delete/
   
