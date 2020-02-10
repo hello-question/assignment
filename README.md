@@ -42,7 +42,7 @@ Step 5: Run the server
 python manage.py runserver
 ```
 
-Step 6: Run the server
+Step 6: View database
 
 ```
 Go to http://127.0.0.1:8000/admin and login using the user that you've created at Step 4. 
