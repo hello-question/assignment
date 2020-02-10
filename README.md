@@ -11,38 +11,44 @@ These instructions will get you a copy of the project up and running on your loc
 
 A step by step series of examples that tell you how to get the development env running
 
-Step 1: Activate the virtual environment
+Step 1: Create a virtual environment folder
+
+```
+python3 -m venv env
+```
+
+Step 2: Activate the virtual environment
 
 ```
 source env/bin/activate
 ```
 
-Step 2: Install Django framework
+Step 3: Install Django framework
 
 ```
 pip3 install django
 ```
 
-Step 3: Make migrations and migrate
+Step 4: Make migrations and migrate
 
 ```
 python manage.py makemigrations
 python manage.py migrate
 ```
 
-Step 4: Create an user for database (http://127.0.0.1:8000/admin)
+Step 5: Create an user for database (http://127.0.0.1:8000/admin)
 
 ```
 python manage.py createsuperuser
 ```
 
-Step 5: Run the server
+Step 6: Run the server
 
 ```
 python manage.py runserver
 ```
 
-Step 6: View database
+Step 7: View database
 
 ```
 Go to http://127.0.0.1:8000/admin and login using the user that you've created at Step 4. 
