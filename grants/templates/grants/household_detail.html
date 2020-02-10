@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% if not object_list %}
+<h3>There are no family member(s) added into the household yet.</h3>
+{% endif %}
+
+{% for item in object_list %}
+    {% if item.spouse != "" %}
+        <h3>Household Name: {{ item.household_type_id }}</h3>
+        <p>Name: {{ item.name }}</p>
+        <p>Gender: {{ item.gender_id }}</p>
+        <p>Marital Status: {{ item.marital_status_id }}</p>
+        <p>Spouse: {{ item.spouse }}</p>
+        <p>Occupation Type: {{ item.occupation_type_id }}</p>
+        <p>Annual Income (SGD): {{ item.annual_income }}</p>
+        <p>Date of Birth: {{ item.date_of_birth }}</p>
+    {% else %}
+        <h3>Household Name: {{ item.household_type_id }}</h3>
+        <p>Name: {{ item.name }}</p>
+        <p>Gender: {{ item.gender_id }}</p>
+        <p>Marital Status: {{ item.marital_status_id }}</p>
+        <p>Occupation Type: {{ item.occupation_type_id }}</p>
+        <p>Annual Income (SGD): {{ item.annual_income }}</p>
+        <p>Date of Birth: {{ item.date_of_birth }}</p>
+    {% endif %}
+    <hr/>
+{% endfor %}
+
+{% endblock %}

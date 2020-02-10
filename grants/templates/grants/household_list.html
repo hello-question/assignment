@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h3>List of households</h3>
+
+{% for instance in object_list %}
+    <p>- <a href="{{ instance.get_absolute_url }}">{{ instance.household_name }}</a></p>
+{% endfor %}
+
+{% endblock %}
